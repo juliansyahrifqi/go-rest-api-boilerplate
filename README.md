@@ -19,3 +19,5 @@ This too using `GROUP BY FUNCTION` folder structure, similar with `MVC (Model Vi
 - [https://github.com/joho/godotenv](https://github.com/joho/godotenv): Read from .env file
 - [https://github.com/lib/pq](https://github.com/lib/pq): Database Driver for PostgreSQL
 - [https://github.com/gorilla/mux](https://github.com/gorilla/mux): Handling routing
+- [https://github.com/golang-jwt/jwt/v5](http://github.com/golang-jwt/jwt/v5): JWT for Auth
+- [https://github.com/go-playground/validator/v10](http://github.com/go-playground/validator/v10): Validator and Validation Request

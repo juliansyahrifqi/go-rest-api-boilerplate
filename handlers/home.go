@@ -6,8 +6,14 @@ import (
 	"net/http"
 )
 
+type authHandler struct{}
+
+func NewAuthHandler() *authHandler {
+	return &authHandler{}
+}
+
 // Example return JSON
-func HomeHandler(w http.ResponseWriter, r *http.Request) {
+func (h *authHandler) HomeHandler(w http.ResponseWriter, r *http.Request) {
 	response := models.Home{
 		Message: "Hello World",
 	}

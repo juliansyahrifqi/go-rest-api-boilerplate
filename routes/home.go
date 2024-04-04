@@ -8,5 +8,7 @@ import (
 
 // List routing for home
 func SetHomeRoutes(apiRouter *mux.Router) {
-	apiRouter.HandleFunc("/home", handlers.HomeHandler).Methods("GET")
+	homeHandler := handlers.NewAuthHandler()
+
+	apiRouter.HandleFunc("/home", homeHandler.HomeHandler).Methods("GET")
 }
